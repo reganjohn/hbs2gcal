@@ -20,16 +20,7 @@
 #
 # Disclaimer:
 # -----------
-# The code is provided "as is" and any express or implied warranties, 
-# including the implied warranties of merchantability and fitness for a 
-# particular purpose are disclaimed. In no event shall John Regan be liable 
-# for any direct, indirect, incidental, special, exemplary, or consequential 
-# damages (including, but not limited to, procurement of substitute goods or 
-# services; loss of use, data, or profits; or business interruption) 
-# sustained by you or a third party, however caused and on any theory of 
-# liability, whether in contract, strict liability, or tort arising in any 
-# way out of the use of this sample code, even if advised of the possibility 
-# of such damage.
+# This code is provided "as-is", so use at your own risk. It has been tested on Max OS X 10.6.8 (Snow Leopard) only. 
 
 # ask the user for the output file
 while true; do
@@ -110,5 +101,5 @@ done < <(grep -l 'inside.hbs.edu' $icsdir/*.ics)
 echo "END:VCALENDAR" >> $ofile
 
 echo "
-Wrote $counter events to $ofile
+Wrote $counter events to $ofile.
 "
